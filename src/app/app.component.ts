@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assignment-1';
+  months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+
+
+
+  monthchanged(event:Event){
+    let ctrl = <HTMLSelectElement>(event.target);
+    alert("you selected " + ctrl.value);
+  }
 }
